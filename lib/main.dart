@@ -30,6 +30,7 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             //for the center two button
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
 
             children: [
               //Button 01
