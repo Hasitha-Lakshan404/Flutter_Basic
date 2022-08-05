@@ -10,15 +10,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
       debugShowCheckedModeBanner: false,
-
       home: Scaffold(
-          appBar: AppBar(
-          // Title 
+        appBar: AppBar(
+          // Title
           title: Text('CodMart'),
-          backgroundColor:,
         ),
+        body: Text('This is a Body'),
       ),
     );
   }
