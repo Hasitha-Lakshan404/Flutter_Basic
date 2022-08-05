@@ -17,11 +17,22 @@ class MyApp extends StatelessWidget {
           title: const Text('CodMart'),
         ),
         body: Center(
-          child: ElevatedButton(onPressed: () {}, child: const Text('Click')),
+          child: ElevatedButton(
+            onPressed: () {
+              print("Print This In Terminal");
+            },
+            child: const Text('Click'),
+          ),
         ),
         bottomNavigationBar: BottomNavigationBar(items: const [
-          BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
-          BottomNavigationBarItem(label: 'Settings', icon: Icon(Icons.settings))
+          BottomNavigationBarItem(
+            label: 'Home',
+            icon: Icon(Icons.home),
+          ),
+          BottomNavigationBarItem(
+            label: 'Settings',
+            icon: Icon(Icons.settings),
+          )
         ]),
       ),
     );
