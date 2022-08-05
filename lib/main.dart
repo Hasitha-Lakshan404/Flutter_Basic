@@ -25,14 +25,29 @@ class _MyAppState extends State<MyApp> {
           title: const Text('CodMart'),
         ),
         body: Center(
-          child: ElevatedButton(
-            onPressed: () {
-              setState(() {
-                buttonName = 'Clicked';
-              });
-              print("Print This In Terminal");
-            },
-            child: Text(buttonName),
+          child: Column(
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    buttonName = 'Clicked';
+                  });
+                  print("Print This In Terminal");
+                },
+                child: Text(buttonName),
+              ),
+
+              //Button 02
+              ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    buttonName = 'Clicked';
+                  });
+                  print("Print This In Terminal");
+                },
+                child: const Text('Button 02'),
+              ),
+            ],
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
