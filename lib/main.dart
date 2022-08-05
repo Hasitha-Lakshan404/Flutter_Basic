@@ -17,6 +17,10 @@ class MyApp extends StatelessWidget {
           title: Text('CodMart'),
         ),
         body: Text('This is a Body'),
+        bottomNavigationBar: BottomNavigationBar(items: [
+          BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
+          BottomNavigationBarItem(label: 'Settings', icon: Icon(Icons.settings))
+        ]),
       ),
     );
   }
