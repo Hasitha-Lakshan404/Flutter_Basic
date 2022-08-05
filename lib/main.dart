@@ -13,6 +13,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String buttonName = "Click";
+  int currentIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +47,12 @@ class _MyAppState extends State<MyApp> {
             ),
           ],
 
-          currentIndex: 0, //to inform which one we stay..in nav bar
+          currentIndex: currentIndex, //to inform which one we stay..in nav bar
+          onTap: (int index) {
+            setState(() {
+              currentIndex = index;
+            });
+          },
         ),
       ),
     );
