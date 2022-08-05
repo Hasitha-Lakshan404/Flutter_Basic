@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           title: const Text('CodMart'),
         ),
         body: Center(
-          child: ElevatedButton(onPressed: () {}, child: Text('Click')),
+          child: ElevatedButton(onPressed: () {}, child: const Text('Click')),
         ),
         bottomNavigationBar: BottomNavigationBar(items: const [
           BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
