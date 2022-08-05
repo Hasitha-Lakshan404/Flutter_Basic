@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           // Title
-          title: Text('CodMart'),
+          title: const Text('CodMart'),
         ),
-        body: Text('This is a Body'),
-        bottomNavigationBar: BottomNavigationBar(items: [
+        body: const Text('This is a Body'),
+        bottomNavigationBar: BottomNavigationBar(items: const [
           BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
           BottomNavigationBarItem(label: 'Settings', icon: Icon(Icons.settings))
         ]),
