@@ -24,9 +24,15 @@ class _MyAppState extends State<MyApp> {
           // Title
           title: const Text('CodMart'),
         ),
+
+        //Sart a body
         body: Center(
           child: Column(
+            //for the center two button
+            mainAxisAlignment: MainAxisAlignment.center,
+
             children: [
+              //Button 01
               ElevatedButton(
                 onPressed: () {
                   setState(() {
@@ -50,12 +56,17 @@ class _MyAppState extends State<MyApp> {
             ],
           ),
         ),
+
+        //navigation bar
         bottomNavigationBar: BottomNavigationBar(
           items: const [
+            //Item01(Home)
             BottomNavigationBarItem(
               label: 'Home',
               icon: Icon(Icons.home),
             ),
+
+            //Item02(Settings)
             BottomNavigationBarItem(
               label: 'Settings',
               icon: Icon(Icons.settings),
