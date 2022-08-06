@@ -34,10 +34,10 @@ class _MyAppState extends State<MyApp> {
             width: double.infinity,
             //set the column/row width full size to the user window
             height: double.infinity,
-            child: Row(
+            child: Column(
               //for the center two button
               mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
 
               children: [
                 //Button 01
