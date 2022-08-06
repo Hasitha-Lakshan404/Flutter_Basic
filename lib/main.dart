@@ -79,7 +79,7 @@ class _MyAppState extends State<MyApp> {
                     ],
                   ),
                 )
-              : const SizedBox(),
+              : Image.asset('images/hut.png'),
         ),
 
         //navigation bar
