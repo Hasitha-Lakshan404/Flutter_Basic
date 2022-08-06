@@ -30,8 +30,10 @@ class _MyAppState extends State<MyApp> {
         //Sart a body
         body: Center(
           child: SizedBox(
-            //to set the column full size to the user window
+            //to set the column/row width full size to the user window
             width: double.infinity,
+            //set the column/row width full size to the user window
+            height: double.infinity,
             child: Row(
               //for the center two button
               mainAxisAlignment: MainAxisAlignment.center,
