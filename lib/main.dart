@@ -60,6 +60,11 @@ class _MyAppState extends State<MyApp> {
 
                 //Button 02
                 ElevatedButton(
+                  //Style Button 02
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.white,
+                    onPrimary: Colors.black87,
+                  ),
                   onPressed: () {
                     setState(() {
                       button02Name = "Exit";
