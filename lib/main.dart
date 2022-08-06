@@ -30,11 +30,13 @@ class _MyAppState extends State<MyApp> {
 
         //Sart a body
         body: Center(
-          child: SizedBox(
+          child: Container(
             //to set the column/row width full size to the user window
             width: double.infinity,
             //set the column/row width full size to the user window
             height: double.infinity,
+            color: Colors.blueGrey,
+
             child: Column(
               //for the center two button
               mainAxisAlignment: MainAxisAlignment.center,
@@ -45,9 +47,9 @@ class _MyAppState extends State<MyApp> {
                 ElevatedButton(
                   //for Style The Button
                   style: ElevatedButton.styleFrom(
-                      primary: const Color.fromARGB(255, 255, 255, 10),
-                      onPrimary: Colors.black),
-
+                    primary: const Color.fromARGB(255, 255, 255, 10),
+                    onPrimary: Colors.black,
+                  ),
                   onPressed: () {
                     setState(() {
                       buttonName = 'Clicked';
