@@ -15,6 +15,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String buttonName = "Click";
+  String button02Name = "Hold On";
   int currentIndex = 0;
 
   @override
@@ -43,13 +44,17 @@ class _MyAppState extends State<MyApp> {
                 //Button 01
                 ElevatedButton(
                   //for Style The Button
-                  style: ElevatedButton.styleFrom(),
+                  style: ElevatedButton.styleFrom(
+                      primary: const Color.fromARGB(255, 255, 255, 10),
+                      onPrimary: Colors.black),
+
                   onPressed: () {
                     setState(() {
                       buttonName = 'Clicked';
                     });
                     print("Print This In Terminal");
                   },
+
                   child: Text(buttonName),
                 ),
 
@@ -57,11 +62,11 @@ class _MyAppState extends State<MyApp> {
                 ElevatedButton(
                   onPressed: () {
                     setState(() {
-                      buttonName = 'Clicked';
+                      button02Name = "Exit";
                     });
                     print("Print This In Terminal");
                   },
-                  child: const Text('Button 02'),
+                  child: Text(button02Name),
                 ),
               ],
             ),
