@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -27,34 +29,38 @@ class _MyAppState extends State<MyApp> {
 
         //Sart a body
         body: Center(
-          child: Column(
-            //for the center two button
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
+          child: SizedBox(
+            //to set the column full size to the user window
+            width: double.infinity,
+            child: Column(
+              //for the center two button
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
 
-            children: [
-              //Button 01
-              ElevatedButton(
-                onPressed: () {
-                  setState(() {
-                    buttonName = 'Clicked';
-                  });
-                  print("Print This In Terminal");
-                },
-                child: Text(buttonName),
-              ),
+              children: [
+                //Button 01
+                ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      buttonName = 'Clicked';
+                    });
+                    print("Print This In Terminal");
+                  },
+                  child: Text(buttonName),
+                ),
 
-              //Button 02
-              ElevatedButton(
-                onPressed: () {
-                  setState(() {
-                    buttonName = 'Clicked';
-                  });
-                  print("Print This In Terminal");
-                },
-                child: const Text('Button 02'),
-              ),
-            ],
+                //Button 02
+                ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      buttonName = 'Clicked';
+                    });
+                    print("Print This In Terminal");
+                  },
+                  child: const Text('Button 02'),
+                ),
+              ],
+            ),
           ),
         ),
 
