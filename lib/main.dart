@@ -79,6 +79,8 @@ class _MyAppState extends State<MyApp> {
                     ],
                   ),
                 )
+
+              //set Images
               : Image.asset('images/hut.png'),
         ),
 
