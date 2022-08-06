@@ -30,58 +30,62 @@ class _MyAppState extends State<MyApp> {
 
         //Sart a body
         body: Center(
-          child: Container(
-            //to set the column/row width full size to the user window
-            width: double.infinity,
-            //set the column/row width full size to the user window
-            height: double.infinity,
-            color: Colors.blueGrey,
+          child: currentIndex == 0
+              ? Container(
+                  //to set the column/row width full size to the user window
+                  width: double.infinity,
+                  //set the column/row width full size to the user window
+                  height: double.infinity,
+                  color: Colors.blueGrey,
 
-            child: Column(
-              //for the center two button
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
+                  child: Column(
+                    //for the center two button
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
 
-              children: [
-                //Button 01
-                ElevatedButton(
-                  //for Style The Button
-                  style: ElevatedButton.styleFrom(
-                    primary: const Color.fromARGB(255, 255, 255, 10),
-                    onPrimary: Colors.black,
+                    children: [
+                      //Button 01
+                      ElevatedButton(
+                        //for Style The Button
+                        style: ElevatedButton.styleFrom(
+                          primary: const Color.fromARGB(255, 255, 255, 10),
+                          onPrimary: Colors.black,
+                        ),
+                        onPressed: () {
+                          setState(() {
+                            buttonName = 'Clicked';
+                          });
+                          print("Print This In Terminal");
+                        },
+
+                        child: Text(buttonName),
+                      ),
+
+                      //Button 02
+                      ElevatedButton(
+                        //Style Button 02
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.white,
+                          onPrimary: Colors.black87,
+                        ),
+                        onPressed: () {
+                          setState(() {
+                            button02Name = "Exit";
+                          });
+                          print("Print This In Terminal");
+                        },
+                        child: Text(button02Name),
+                      ),
+                    ],
                   ),
-                  onPressed: () {
-                    setState(() {
-                      buttonName = 'Clicked';
-                    });
-                    print("Print This In Terminal");
-                  },
-
-                  child: Text(buttonName),
-                ),
-
-                //Button 02
-                ElevatedButton(
-                  //Style Button 02
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.white,
-                    onPrimary: Colors.black87,
-                  ),
-                  onPressed: () {
-                    setState(() {
-                      button02Name = "Exit";
-                    });
-                    print("Print This In Terminal");
-                  },
-                  child: Text(button02Name),
-                ),
-              ],
-            ),
-          ),
+                )
+              : const SizedBox(),
         ),
 
         //navigation bar
         bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Colors.white,
+
           items: const [
             //Item01(Home)
             BottomNavigationBarItem(
