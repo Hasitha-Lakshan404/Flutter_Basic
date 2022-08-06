@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
           child: SizedBox(
             //to set the column full size to the user window
             width: double.infinity,
-            child: Column(
+            child: Row(
               //for the center two button
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
